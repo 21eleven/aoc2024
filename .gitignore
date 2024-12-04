@@ -2,3 +2,12 @@
 *.ez
 /build
 erl_crash.dump
+*/test/
+*/LICENSE
+*/data/
+*/target/
+*/build/
+*/README.md
+*/.github
+*/.gitignore
+*/input.txt
