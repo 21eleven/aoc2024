@@ -14,6 +14,7 @@ orders = [order.split(",") for order in order_str.splitlines()]
 print(orders)
 
 def part1and2lol(rules, orders):
+    # part1
     valid_orders = []
     invalids = []
     orders = [{val:i for (i, val) in enumerate(order)} for order in orders]
@@ -35,6 +36,7 @@ def part1and2lol(rules, orders):
             invalids.append(order)
     out = sum(int(order[len(order)//2]) for order in valid_orders)
     print(out)
+    # part2
     def make_right(rules, order):
         for (l,r) in rules:
             if (l_idx := order.get(l)) is not None and (r_idx := order.get(r)) is not None:
